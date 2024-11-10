@@ -1,0 +1,102 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Bubble-style font */
+    background-color: #FFF0F5; /* Light pink background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Floating Cute Animals */
+.floating-animals {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    pointer-events: none; /* Make images unclickable */
+}
+
+.floating-animal {
+    position: absolute;
+    animation: float 5s infinite ease-in-out alternate;
+}
+
+.floating-animal:nth-child(1) { left: 20%; animation-delay: 0s; }
+.floating-animal:nth-child(2) { left: 50%; animation-delay: 2s; }
+.floating-animal:nth-child(3) { left: 80%; animation-delay: 4s; }
+
+@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(20px); }
+}
+
+/* Header */
+header {
+    background-color: #FFC0CB; /* Baby pink */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #FFF5F7; /* Light baby pink */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #FF69B4; /* Hot pink for headings */
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+li {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #FFC0CB;
+    margin: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+    position: sticky;
+    bottom: 0;
+}
