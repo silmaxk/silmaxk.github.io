@@ -23,6 +23,8 @@ body {
 
 .floating-animal {
     position: absolute;
+    width: 100px; /* Set a width to control size */
+    height: auto; /* Maintain aspect ratio */
     animation: float 5s infinite ease-in-out alternate;
 }
 
