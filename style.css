@@ -40,27 +40,32 @@ nav a:hover {
 
 /* Intro Section */
 .intro-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 100px 20px 50px; /* Add top padding to account for fixed header */
-    gap: 50px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .intro-gif {
-    width: 40%;
-    max-width: 400px;
-    border-radius: 15px;
-    align-self: flex-start; /* Prevent GIF from following when scrolling */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .intro-text {
-    text-align: left;
-    flex: 1;
-    background-color: #87A646;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    background-color: rgba(135, 166, 70, 0.8);
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    max-width: 400px;
 }
 
 .intro-text h1 {
@@ -85,7 +90,7 @@ nav a:hover {
 
 /* Section Styles */
 section {
-    padding: 40px 60px;
+    padding: 100px 60px 40px; /* Add top padding to account for fixed header */
     margin: 20px auto;
     max-width: 1200px; /* Increase max-width to take up more of the page */
     background-color: #8C613B;
