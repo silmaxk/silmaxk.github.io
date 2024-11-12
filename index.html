@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Silma Khan | Data Scientist/Analyst</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Floating Cute Animals -->
-    <div class="floating-animals">
-        <img src="gigi.png" alt="Cute Cat" class="floating-animal">
-        <img src="images/kuromi.png" alt="Cute Dog" class="floating-animal">
-        <img src="images/totoro.png" alt="Cute Bird" class="floating-animal">
-    </div>
-
-    <!-- Header Section -->
-    <header>
-        <h1>Silma Khan</h1>
+    <!-- Home Section with GIF and Introduction -->
+    <header id="home">
+        <div class="intro-container">
+            <img src="https://i.pinimg.com/originals/8c/ac/ec/8cacec3c6545e952341c2a5b90f047b0.gif" alt="Welcome GIF" class="intro-gif">
+            <div class="intro-text">
+                <h1>Hi! I'm <img src="chibi.PNG" alt="Avatar" class="avatar"> Silma Khan</h1>
+                <p class="bubble-text">I am an undergraduate Data Science student who loves making data accessible and telling meaningful stories through data!</p>
+            </div>
+        </div>
         <nav>
+            <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -28,35 +28,71 @@
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Hi! I'm a passionate data scientist who loves to make data accessible and fun. I believe data can tell amazing stories!</p>
+        <p>Hi! I'm Silma Khan, a passionate data science undergraduate student. My goal is to bridge the gap between data and understanding, helping organizations make informed decisions. I have experience in data analysis, machine learning, and various programming languages. I love tackling challenges and creating impactful visualizations to tell data stories.</p>
+        <div class="education">
+            <h3>Education</h3>
+            <p>Bachelor of Science in Data Science, Graduation: December 2024</p>
+        </div>
+        <div class="experience">
+            <h3>Experience</h3>
+            <ul>
+                <li>Data Scientist Intern at Metropolitan Transportation Authority</li>
+                <li>America On Tech Fellow</li>
+                <!-- Add more experience items here -->
+            </ul>
+        </div>
+        <div class="hobbies">
+            <h3>Hobbies</h3>
+            <ul>
+                <li>Reading about AI & ML</li>
+                <li>Painting & Sketching</li>
+                <li>Exploring new data visualization techniques</li>
+            </ul>
+        </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>Project Title</h3>
-            <p>Short description of the project, highlighting skills and tools used.</p>
-            <a href="link_to_project_repo" target="_blank">View on GitHub</a>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="images/project1.png" alt="Project 1">
+                <h3>Project 1 Title</h3>
+                <p>Short description of the project, highlighting skills and tools used.</p>
+                <a href="link_to_project_repo" target="_blank">View on GitHub</a>
+            </div>
+            <!-- Add more project cards here -->
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>Data Analysis</li>
-            <li>Machine Learning</li>
-            <!-- Add more skills as needed -->
-        </ul>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: khansilma@gmail.com</p>
+        <h2>Contact Me</h2>
+        <p>Thank you for visiting my portfolio! I'm always working on new projects, so feel free to check back for updates.</p>
+        <p>To get in touch, connect with me via:</p>
+        <p>Email: <a href="mailto:khansilma@gmail.com">khansilma@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/silma-khan/">LinkedIn Profile</a></p>
+        <p>If you would like to get in touch directly, please submit the form below and I will contact you shortly!</p>
+
+        <!-- Contact Form -->
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLScPImRRuSKKiAOk9HfojESEuRdMgHLz28PjW6vQoSsCNSIIyA/viewform?embedded=true" method="post" target="_blank">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="entry.firstName" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="entry.lastName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="entry.email" required>
+
+            <label for="linkedin">LinkedIn Profile:</label>
+            <input type="url" id="linkedin" name="entry.linkedin">
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="entry.comment"></textarea>
+
+            <button type="submit">Submit Form</button>
+        </form>
     </section>
 
     <!-- Footer -->
