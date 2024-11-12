@@ -7,19 +7,20 @@
 
 body {
     font-family: 'Comic Neue', cursive, sans-serif;
-    background-color: #63732C; /* Color theme based on the forest palette */
-    color: #FFF0F5;
+    background-color: #FFFFFF; /* Change background color to white */
+    color: #333;
     line-height: 1.6;
 }
 
 /* Header Section */
 header {
     text-align: center;
-    padding: 40px;
+    padding: 20px;
     background-color: #8C613B; /* Earthy brown from palette */
     color: white;
-    position: sticky;
+    position: fixed; /* Make header fixed to follow when scrolling */
     top: 0;
+    width: 100%;
     z-index: 2;
 }
 
@@ -40,21 +41,22 @@ nav a:hover {
 /* Intro Section */
 .intro-container {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    padding: 50px 20px;
+    padding: 100px 20px 50px; /* Add top padding to account for fixed header */
+    gap: 50px;
 }
 
 .intro-gif {
-    width: 80%;
-    max-width: 600px;
+    width: 40%;
+    max-width: 400px;
     border-radius: 15px;
-    margin-bottom: 20px;
+    align-self: flex-start; /* Prevent GIF from following when scrolling */
 }
 
 .intro-text {
-    text-align: center;
-    max-width: 600px;
+    text-align: left;
+    flex: 1;
     background-color: #87A646;
     padding: 20px;
     border-radius: 15px;
@@ -83,15 +85,13 @@ nav a:hover {
 
 /* Section Styles */
 section {
-    padding: 40px 20px;
+    padding: 40px 60px;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 1200px; /* Increase max-width to take up more of the page */
     background-color: #8C613B;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #FFF5F7;
-    position: relative;
-    z-index:3;
 }
 
 h2 {
