@@ -16,7 +16,7 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #8C613B; /* Earthy brown from palette */
+    background-color: #535925; /* Earthy brown from palette */
     color: white;
     position: fixed; /* Make header fixed to follow when scrolling */
     top: 0;
@@ -59,7 +59,7 @@ nav a:hover {
 .intro-text {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 10%;
     transform: translate(-50%, -50%);
     background-color: rgba(255, 240, 245, 0.9); /* Light pink bubble style */
     padding: 30px;
@@ -96,7 +96,7 @@ section {
     padding: 100px 60px 40px; /* Add top padding to account for fixed header */
     margin: 20px auto;
     max-width: 1200px; /* Increase max-width to take up more of the page */
-    background-color: #8C613B;
+    background-color: #535925;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #FFF5F7;
@@ -198,7 +198,7 @@ input, textarea {
 
 button[type="submit"] {
     padding: 10px 20px;
-    background-color: #402718;
+    background-color: #535925;
     color: white;
     font-size: 1rem;
     border: none;
