@@ -60,7 +60,7 @@ nav a:hover {
     position: absolute;
     top: 50%;
     left: 10%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
     background-color: rgba(255, 240, 245, 0.9); /* Light pink bubble style */
     padding: 30px;
     border-radius: 50px;
