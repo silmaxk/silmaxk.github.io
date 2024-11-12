@@ -58,14 +58,16 @@ nav a:hover {
 
 .intro-text {
     position: absolute;
-    top: 20%;
-    left: 10%;
-    background-color: rgba(135, 166, 70, 0.8);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 240, 245, 0.9); /* Light pink bubble style */
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     z-index: 2;
-    max-width: 400px;
+    max-width: 600px;
+    text-align: center;
 }
 
 .intro-text h1 {
@@ -74,6 +76,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     gap: 10px;
+    justify-content: center;
 }
 
 .avatar {
@@ -85,7 +88,7 @@ nav a:hover {
 .bubble-text {
     font-size: 1.3rem;
     margin-top: 15px;
-    color: #FFF0F5;
+    color: #402718;
 }
 
 /* Section Styles */
